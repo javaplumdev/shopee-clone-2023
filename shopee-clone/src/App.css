@@ -3,6 +3,19 @@
 }
 
 .icons {
-	color: white;
-	font-size: 20px;
+	color: #fff;
+	font-size: 35px;
+}
+
+.logo {
+	filter: brightness(1000%);
+	max-width: 150px;
+}
+
+.text {
+	padding: 0.5em 1em;
+}
+
+.button {
+	background-color: rgb(251, 87, 49);
 }
