@@ -11,31 +11,17 @@ import 'swiper/css/pagination';
 // import required modules
 import { Pagination, Autoplay } from 'swiper';
 
+import { ToastContainer, toast } from 'react-toastify';
+
 const Hero = () => {
+	const notify = () => toast('Wow so easy!');
+
 	return (
 		<>
 			<div className="container mx-auto mt-7 grid grid-rows-3 grid-flow-col gap-2">
 				<div className="bg-red-700 row-span-4 col-span-2 h-56 ">
-					<Swiper
-						spaceBetween={5}
-						pagination={{
-							clickable: true,
-						}}
-						modules={[Pagination, Autoplay]}
-						className="mySwiper"
-						autoplay={{
-							delay: 2500,
-							disableOnInteraction: false,
-						}}
-					>
-						{heroCarouselImages.map((item) => {
-							return (
-								<SwiperSlide key={item.id}>
-									<img src={item.name} alt={item.name} />
-								</SwiperSlide>
-							);
-						})}
-					</Swiper>
+					<button onClick={notify}>Notify!</button>
+					<ToastContainer />
 				</div>
 				<div className="bg-red-700 col-span-1 h-28">02</div>
 				<div className="bg-red-700 col-span-1 h-28">03</div>

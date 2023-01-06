@@ -5,6 +5,8 @@ import { ContextProvider } from './context/context';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 
+import 'react-toastify/dist/ReactToastify.css';
+
 function App() {
 	return (
 		<ContextProvider>
