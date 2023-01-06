@@ -78,4 +78,25 @@ const navCategories = [
 	},
 ];
 
-export { navLinksRight, navLinksLeft, navCTA, navCategories };
+const heroCarouselImages = [
+	{
+		id: 1,
+		name: 'https://insideretail.asia/wp-content/uploads/2020/09/Shopee-x-BLACKPINK-High-Res.png',
+	},
+	{
+		id: 2,
+		name: 'https://www.cnnphilippines.com/.imaging/mte/demo-cnn-new/750x468/dam/cnn/2022/9/30/Shopee-backlash_CNNPH.jpg/jcr:content/Shopee-backlash_CNNPH.jpg',
+	},
+	{
+		id: 3,
+		name: 'https://techlatamasia.com/wp-content/uploads/2017/07/saupload_shopee-11-11-header-2-1000x600-1.jpg',
+	},
+];
+
+export {
+	navLinksRight,
+	navLinksLeft,
+	navCTA,
+	navCategories,
+	heroCarouselImages,
+};

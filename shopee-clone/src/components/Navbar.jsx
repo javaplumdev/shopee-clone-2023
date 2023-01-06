@@ -20,8 +20,8 @@ const Navbar = () => {
 				<div>
 					{navLinksLeft.map((item) => {
 						return (
-							<small>
-								<a href="#" className="text-white mx-2" key={item.id}>
+							<small key={item.id}>
+								<a href="#" className="text-white mx-2">
 									{item.name}
 								</a>
 							</small>
@@ -31,8 +31,8 @@ const Navbar = () => {
 				<div>
 					{navLinksRight.map((item) => {
 						return (
-							<small>
-								<a href="#" className="text-white mx-2" key={item.id}>
+							<small key={item.id}>
+								<a href="#" className="text-white mx-2">
 									{item.name}
 								</a>
 							</small>
@@ -40,8 +40,8 @@ const Navbar = () => {
 					})}
 					{navCTA.map((item) => {
 						return (
-							<small>
-								<a href="#" className="text-white mx-2 font-bold" key={item.id}>
+							<small key={item.id}>
+								<a href="#" className="text-white mx-2 font-bold">
 									{item.name}
 								</a>
 							</small>
